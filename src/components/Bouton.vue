@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-<router-link :to="to" class="orange-button">
+<router-link :to="to" class="nav-button">
     {{ msg || "Cliquez ici" }}
   </router-link>
 </template>
@@ -24,6 +24,16 @@ defineProps({
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+}
+.nav-button {
+  background-color: #FFA726;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
 }
 
 /* Effet au survol */

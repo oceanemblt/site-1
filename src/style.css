@@ -31,8 +31,20 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: #FF6F00;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Georgia'; /* Changer la police du titre */
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 30px; /* Ajouter un peu d'espace à l'intérieur */
+  border: 5px solid #FF6F00; /* Bordure autour du titre */
+  border-radius: 15px; /* Coins arrondis */
+  background-color: rgba(255, 216, 186, 0.174); /* Fond léger */
+  display: inline-block; /* Permet au titre d’être bien encadré */
+  white-space: nowrap; /* Empêche le retour à la ligne */
+
 }
 
 button {
