@@ -1,5 +1,5 @@
 <template>
-<Barreaccueil />
+<Barreaccueil></Barreaccueil>
 
 <div class ="home">
   <div class="header">

@@ -1,3 +1,4 @@
+
 <script setup>
 import { ref } from 'vue';
 import { useUserStore } from '@/store/userStore';
@@ -13,9 +14,9 @@ const pseudo = ref('');
 const nom = ref('');
 const prenom = ref('');
 const age = ref('');
-const film = ref('');
-const serie = ref('');
-const genre = ref('');
+const filmPrefere = ref('');
+const seriePreferee = ref('');
+const genrePrefere = ref('');
 
 // Liste des avatars disponibles
 const avatar = [
@@ -45,20 +46,24 @@ const login = () => {
 };
 
 // Fonction pour s'inscrire
-const register = () => {
-  store.register({
+const register = async () => {
+  const isRegistered = await store.register({
     pseudo: pseudo.value,
     nom: nom.value,
     prenom: prenom.value,
     age: age.value,
-    film: film.value,
-    serie: serie.value,
-    genre: genre.value,
+    filmPrefere: filmPrefere.value,
+    seriePreferee: seriePreferee.value,
+    genrePrefere: genrePrefere.value,
     avatar: selectedAvatar.value // Sauvegarde de l'avatar sélectionné
   });
 
-  successMessage.value = "Bravo, ton compte est bien créé !";
-  router.push('/profil'); // Redirection vers le profil après l'inscription
+  if (isRegistered) {
+    successMessage.value = "Bravo, ton compte est bien créé !";
+    router.push('/profil'); // Redirection vers le profil après l'inscription
+  } else {
+    message.value = "Échec de l'inscription. Veuillez réessayer.";
+  }
 };
 
 // Fonction pour basculer entre les modes de connexion et d'inscription
@@ -95,9 +100,9 @@ const toggleForm = () => {
       <!-- Deuxième colonne (Film préféré, Série, Genre) -->
       <div class="form-column">
         <h3>Préférences</h3>
-        <input v-model="film" placeholder="Film préféré" class="input-field" />
-        <input v-model="serie" placeholder="Série préférée" class="input-field" />
-        <input v-model="genre" placeholder="Genre préféré" class="input-field" />
+        <input v-model="filmPrefere" placeholder="Film préféré" class="input-field" />
+        <input v-model="seriePreferee" placeholder="Série préférée" class="input-field" />
+        <input v-model="genrePrefere" placeholder="Genre préféré" class="input-field" />
       </div>
 
       <!-- Troisième colonne (Choix d'avatar) -->

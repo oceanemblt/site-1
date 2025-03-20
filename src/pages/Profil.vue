@@ -37,10 +37,10 @@
             <strong>Film préféré:</strong> {{ filmPrefere }}
           </div>
           <div class="profil-item">
-            <strong>Genre préféré:</strong> {{ genrePrefere }}
+            <strong>Série préféré:</strong> {{ seriePreferee }}
           </div>
           <div class="profil-item">
-            <strong>Série préférée:</strong> {{ seriePreferee }}
+            <strong>Genre préféré:</strong> {{ genrePrefere }}
           </div>
         </div>
       </div>
