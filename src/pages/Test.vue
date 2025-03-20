@@ -248,11 +248,12 @@ input, select {
 h1 {
   text-align: center; /* Centre le texte */
   display: flex;
+  font-size: 60px;
   margin-top: 100px;
   justify-content: center; /* Centre le texte horizontalement */
   align-items: center; /* Aligne verticalement */
   max-width: 100%; /* Évite le débordement */
-  font-size: clamp(40px, 8vw,70px); /* Ajuste la taille */
+  /*font-size: clamp(40px, 8vw,70px); /* Ajuste la taille */
   padding: 10px; /* Ajoute de l'espace */
   word-wrap: break-word; /* Force le texte à revenir à la ligne */
 }

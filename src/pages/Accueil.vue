@@ -79,7 +79,7 @@ body {
 
 h1 {
   color: #FF6F00;
-  font-size: 70px;
+  font-size: 60px;
   font-family: 'Georgia'; /* Changer la police du titre */
   margin-bottom: 20px;
   margin-top: 80px;

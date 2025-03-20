@@ -93,7 +93,7 @@ h1 {
   margin-top: 100px;
   justify-content: center;
   align-items: center;
-  font-size: clamp(40px, 8vw, 70px);
+  font-size: 60px;
   padding: 10px;
 }
 

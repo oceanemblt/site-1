@@ -151,7 +151,7 @@ const toggleForm = () => {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 60px;
   margin-bottom: 20px;
   color: #FF6F00;
   font-weight: bold;

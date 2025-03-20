@@ -44,7 +44,7 @@ const logout = () => {
   left: 0;
   width: 100%;
   background-color: #FF6F00;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,6 +73,6 @@ const logout = () => {
 }
 
 .logout:hover {
-  background-color: darkred;
+  background-color: rgb(247, 11, 11);
 }
 </style>
