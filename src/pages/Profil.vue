@@ -70,19 +70,19 @@ if (!pseudo) {
 </script>
 
 <style scoped>
-/* Container principal de la page profil */
+
 .profil-container {
   padding: 30px;
   background-color: #fff6e6;
   margin-top: 50px;
   position: relative;
   max-width: 1100px;
-  margin: 50px auto; /* Centré sur l'écran avec un espacement autour */
+  margin: 50px auto; 
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Container pour le titre et l'avatar */
+
 .profil-header {
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ if (!pseudo) {
   margin-bottom: 30px;
 }
 
-/* Titre Profil */
+
 .profil-title {
   text-align: center;
   color: #FF6F00;
@@ -101,7 +101,7 @@ if (!pseudo) {
   margin: 0;
 }
 
-/* Avatar centré avec le titre */
+
 .avatar {
   width: 120px;
   height: 120px;
@@ -117,15 +117,15 @@ if (!pseudo) {
   object-fit: cover;
 }
 
-/* Section avec les deux cadres côte à côte */
+
 .profil-box-container {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap; /* Adaptation pour petits écrans */
+  flex-wrap: wrap; 
 }
 
-/* Carré avec bord arrondi pour chaque box */
+
 .profil-box {
   background-color: #ffdda1;
   padding: 20px;
@@ -138,7 +138,7 @@ if (!pseudo) {
   justify-content: space-between;
 }
 
-/* Titre pour chaque section dans les boîtes */
+
 .section-title {
   font-size: 24px;
   color: #FF6F00;
@@ -147,7 +147,7 @@ if (!pseudo) {
   font-weight: bold;
 }
 
-/* Section des informations du profil */
+
 .profil-info {
   color: white;
   font-size: 18px;
@@ -156,7 +156,7 @@ if (!pseudo) {
   max-width: 75%;
 }
 
-/* Style des éléments de profil */
+
 .profil-item {
   margin-bottom: 15px;
   background-color: #ffb24e;
@@ -167,13 +167,13 @@ if (!pseudo) {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Textes en gras pour les labels */
+
 .profil-item strong {
   color: #FF6F00;
   font-weight: bold;
 }
 
-/* Adaptation pour écrans plus petits */
+
 @media (max-width: 768px) {
   .profil-box-container {
     flex-direction: column;
@@ -181,7 +181,7 @@ if (!pseudo) {
 
   .profil-box {
   background-color: #ffd9bb;
-  padding: 10px; /* Réduction du padding pour rapprocher les éléments du haut */
+  padding: 10px; 
   border-radius: 10px;
   flex: 1;
   position: relative;

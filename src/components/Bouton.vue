@@ -38,13 +38,13 @@ defineProps({
 
 /* Effet au survol */
 .orange-button:hover {
-  background-color: #F57C00; /* Orange plus foncé */
-  transform: scale(1.05); /* Effet de zoom */
+  background-color: #F57C00; 
+  transform: scale(1.05); 
 }
 
 /* Effet au clic */
 .orange-button:active {
-  background-color: #E65100; /* Orange encore plus foncé */
+  background-color: #E65100; 
   transform: scale(0.95);
 }
 </style>

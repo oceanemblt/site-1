@@ -109,7 +109,7 @@ h1 {
 
 .favorites-list {
   display: flex;
-  justify-content: center; /* Centrage des films */
+  justify-content: center; 
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px 0;

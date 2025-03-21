@@ -2,14 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { useUserStore } from '@/store/userStore';
 import Accueil from './pages/Accueil.vue';
 import Test from './pages/Test.vue';
-import Favoris from './pages/Favoris.vue'; // Renommé pour plus de clarté
+import Favoris from './pages/Favoris.vue'; 
 import Profil from './pages/Profil.vue';
 import Connexion from './pages/Connexion.vue';
 
 const routes = [
   { path: '/', component: Accueil },
   { path: '/test', component: Test },
-  { path: '/favoris', component: Favoris }, // Changé de /anciens-choix à /favoris
+  { path: '/favoris', component: Favoris }, 
   { path: '/connexion', component: Connexion }, // ✅ Page Connexion
   { 
     path: '/profil', 

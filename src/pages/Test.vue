@@ -11,7 +11,7 @@
       </router-link>
     </div>
 
-    <!-- Page de recherche - toujours visible car nous n'utilisons plus currentPage -->
+
     <div>
       <!-- Formulaire -->
       <form @submit.prevent="fetchMovies">
@@ -72,7 +72,7 @@
 import { ref, onMounted, watch } from 'vue';
 import axios from 'axios';
 
-const API_KEY = import.meta.env.VITE_API_KEY; // Remplace par ta clé TMDb
+const API_KEY = import.meta.env.VITE_API_KEY; 
 
 const preferences = ref({
   actor: '',
@@ -84,7 +84,7 @@ const movies = ref([]);
 const selectedMovie = ref(null);
 const favorites = ref([]);
 
-// Charger les favoris depuis localStorage au démarrage
+
 onMounted(() => {
   const savedFavorites = localStorage.getItem('movieFavorites');
   if (savedFavorites) {
@@ -92,7 +92,7 @@ onMounted(() => {
   }
 });
 
-// Sauvegarder les favoris quand ils changent
+
 watch(favorites, (newFavorites) => {
   localStorage.setItem('movieFavorites', JSON.stringify(newFavorites));
 }, { deep: true });
@@ -246,21 +246,20 @@ input, select {
 }
 
 h1 {
-  text-align: center; /* Centre le texte */
+  text-align: center; 
   display: flex;
   font-size: 60px;
   margin-top: 100px;
-  justify-content: center; /* Centre le texte horizontalement */
-  align-items: center; /* Aligne verticalement */
-  max-width: 100%; /* Évite le débordement */
-  /*font-size: clamp(40px, 8vw,70px); /* Ajuste la taille */
-  padding: 10px; /* Ajoute de l'espace */
-  word-wrap: break-word; /* Force le texte à revenir à la ligne */
+  justify-content: center; 
+  align-items: center; 
+  max-width: 100%; 
+  padding: 10px; 
+  word-wrap: break-word; 
 }
 
 .test-container {
-  max-width: 1500px; /* Utilise une largeur adaptative */
-  margin: auto; /* Centre le conteneur */
+  max-width: 1500px; 
+  margin: auto; 
 }
 
 button {

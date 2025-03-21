@@ -4,7 +4,7 @@
 <div class ="home">
   <div class="header">
     <img src="@/assets/Mooviechoose.png" alt="Logo Mooviechoose" class="logo" />
-    <h1>Mooviechoose</h1>
+    <h1>Moviechoose</h1>
     <img src="@/assets/Mooviechoose.png" alt="Logo Mooviechoose" class="logo" />
 </div>
     <p>Bienvenue sur le site où choisir un film ne sera plus un problème !</p>
@@ -56,12 +56,12 @@ const goToTest = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Espacement entre le texte et le logo */
+  gap: 15px; 
   margin-bottom: 20px;
 }
 
 body {
-  background-color: #fff6e6; /* Orange pâle */
+  background-color: #fff6e6; 
   font-family: 'Arial', sans-serif;
 }
 
@@ -74,42 +74,42 @@ body {
 .logo {
   height: 90px;
   width: auto;
-  margin-top: 50px; /* Ajoute une petite marge pour abaisser les logos */
+  margin-top: 50px; 
 }
 
 h1 {
   color: #FF6F00;
   font-size: 60px;
-  font-family: 'Georgia'; /* Changer la police du titre */
+  font-family: 'Georgia'; 
   margin-bottom: 20px;
   margin-top: 80px;
   text-transform: uppercase;
-  padding: 10px 30px; /* Ajouter un peu d'espace à l'intérieur */
-  border: 5px solid #FF6F00; /* Bordure autour du titre */
-  border-radius: 15px; /* Coins arrondis */
-  background-color: rgba(255, 216, 186, 0.174); /* Fond léger */
-  display: inline-block; /* Permet au titre d’être bien encadré */
+  padding: 10px 30px; 
+  border: 5px solid #FF6F00; 
+  border-radius: 15px; 
+  background-color: rgba(255, 216, 186, 0.174); 
+  display: inline-block; 
 
 }
 
 p {
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Appliquer Comic Sans au texte */
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
   color: #333;
   font-size: 20px;
-  margin-bottom: 30px; /* Espacement entre le texte et le bouton */
+  margin-bottom: 30px; 
 }
 
 .movie-posters {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 colonnes */
+  grid-template-columns: repeat(6, 1fr); 
   gap: 15px;
   padding: 20px;
-  justify-items: center; /* Centrer les images dans les cases */
+  justify-items: center; 
 }
 .poster {
-  width: 150px; /* Largeur fixe */
-  height: 225px; /* Hauteur fixe */
-  object-fit: cover; /* Couvrir le cadre sans déformation */
+  width: 150px; 
+  height: 225px; 
+  object-fit: cover; 
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;

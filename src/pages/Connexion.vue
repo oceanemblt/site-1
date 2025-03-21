@@ -7,9 +7,9 @@ import { useRouter } from 'vue-router';
 const store = useUserStore();
 const router = useRouter();
 
-const isRegistering = ref(false);  // État pour savoir si l'utilisateur veut s'inscrire ou se connecter
+const isRegistering = ref(false);  
 
-// Variables pour le formulaire d'inscription
+
 const pseudo = ref('');
 const nom = ref('');
 const prenom = ref('');
@@ -28,7 +28,7 @@ const avatar = [
   'https://m.media-amazon.com/images/I/61iNyTwMmTL.jpg'
 ];
 
-const selectedAvatar = ref(avatar[0]); // Avatar par défaut
+const selectedAvatar = ref(avatar[0]); 
 
 // Message d'erreur
 const message = ref('');
@@ -141,7 +141,7 @@ const toggleForm = () => {
 
 <style scoped>
 .login-container {
-  max-width: 1000px; /* Augmenté pour accommoder 4 colonnes */
+  max-width: 1000px; 
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -164,7 +164,7 @@ h3 {
 }
 
 .avatar-title {
-  margin-bottom: 20px; /* Marge réduite entre le titre et les avatars */
+  margin-bottom: 20px; 
 }
 
 .form-container {
@@ -180,7 +180,7 @@ h3 {
 
 .registration-form {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 15px;
 }
 
@@ -247,7 +247,6 @@ h3 {
   text-decoration: underline;
 }
 
-/* Style des colonnes */
 .form-column {
   background-color: #ffdda1;
   padding: 15px;
@@ -257,7 +256,7 @@ h3 {
   flex-direction: column;
 }
 
-/* Colonnes pour les avatars */
+
 .avatar-column {
   display: flex;
   flex-direction: column;
@@ -268,7 +267,7 @@ h3 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 0px; /* Réduction de l'espace entre le titre et la liste */
+  padding-top: 0px; 
 }
 
 .avatar-list {
@@ -278,8 +277,8 @@ h3 {
 }
 
 .avatar-image {
-  width: 75px; /* Taille augmentée (avant: 60px) */
-  height: 75px; /* Taille augmentée (avant: 60px) */
+  width: 75px; 
+  height: 75px; 
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s, border 0.2s;
@@ -294,7 +293,7 @@ h3 {
   border: 3px solid #FF6F00;
 }
 
-/* Colonne pour l'avatar sélectionné */
+
 .selected-avatar-column {
   display: flex;
   flex-direction: column;
